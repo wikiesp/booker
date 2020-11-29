@@ -589,6 +589,9 @@ ul.show {
     .container h1 {
         font-size: 2.3em;
     }
+    .second_nav{
+        padding-top:1em;
+    }
 
     .break {
         display: contents;
