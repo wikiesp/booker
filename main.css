@@ -15,7 +15,7 @@ html {
 }
 
 header {
-    padding: 0 0 1em 0;
+    padding: 0 0 2em 0;
     background-color: #fff;
     -webkit-box-shadow: 0 0.15rem 0.1rem 0 rgba(0, 0, 0, 0.05);
     box-shadow: 0 0.15rem 0.1rem 0 rgba(0, 0, 0, 0.05);
@@ -80,7 +80,8 @@ ul li {
 }
 
 .li_right {
-    display: flex;
+	display: flex;
+	align-items:center;
 }
 
 /* .second_nav ul {
@@ -160,7 +161,6 @@ ul li {
 
 .fondo1 {
     background-image: url(images/banner.jpg);
-    /* height: 80vh; */
 }
 
 .article_first {
