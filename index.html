@@ -5,7 +5,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="main.css" />
 		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-		<script src="app.js"></script>
 		<title>Booker</title>
 	</head>
 	<body>
@@ -38,17 +37,17 @@
 				</ul>
 			</div>
 			<nav class="second_nav">
-				<a href="#"><span class="logooo">B</span>ooker</a>
-				<ul class="li_right">
+				<a class="centrado" href="#"><span class="logooo">B</span>ooker</a>
+				<span id="hamburger" class="hamburger"><i class="fad fa-bars"></i></span>
+				<ul id="nav_hamburger" class="li_right">
 					<li class="link1"><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">More Info</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="#view">About</a></li>
+					<li><a href="#team">Team</a></li>
+					<li><a href="#contact">Contact</a></li>
 					<li>
 						<button><i class="fas fa-user"></i> Get Started</button>
 					</li>
 				</ul>
-				<span class="btn_menu"><i class="fad fa-bars"></i></span>
 			</nav>
 		</header>
 		<!-- h1 & photo -->
@@ -108,7 +107,7 @@
 		</section>
 		<p class="center_p">VIEW OUR</p>
 		<h2 class="center_h2">Recent Properties</h2>
-		<section class="view">
+		<section id="view" class="view">
 			<article class="view_first">
 				<img src="images/n10.jpg" alt="Casa 1" />
 				<h4 class="p08">Tittle goes here</h4>
@@ -197,7 +196,7 @@
 		<!--
 		  -- ─── AGENTES ─────────────────────────────────────────────────────
 		  -->
-		<section class="agents">
+		<section id="team" class="agents">
 			<article class="agents_first">
 				<img src="images/team.jpg" alt="team" />
 				<span class="agent_cblue">Agent</span>
@@ -241,7 +240,7 @@
 				</ul>
 			</article>
 		</section>
-		<div class="fondo4">
+		<div id="contact" class="fondo4">
 			<section class="our">
 				<article class="our_first">
 					<h2>
@@ -249,10 +248,7 @@
 						<span class="break">Responsibility To Give</span>
 						<span></span>Good Property
 					</h2>
-					<p class="our_first_one">
-						Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis.Integer sit amet mattis quam, sit amet ultricies velit. Praesent
-						ullamcorper dui turpis.
-					</p>
+					<p class="our_first_one">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis sodales quis.Integer sit amet mattis quam, sit amet ultricies velit. Praesent ullamcorper dui turpis.</p>
 					<p class="our_first_two">Integer sit amet mattis quam, sit amet ultricies velit. Praesent ullamcorper dui turpis.</p>
 				</article>
 				<article class="our_second">
@@ -308,6 +304,7 @@
 				</h5>
 			</footer>
 		</div>
+		<script src="app.js"></script>
 		<script>
 			//Get the button
 			var mybutton = document.getElementById('btop');
@@ -331,12 +328,5 @@
 				document.documentElement.scrollTop = 0;
 			}
 		</script>
-
-		<!-- <script>
-			function topFunction() {
-				document.body.scrollTop = 0;
-				document.documentElement.scrollTop = 0;
-			}
-		</script> -->
 	</body>
 </html>
