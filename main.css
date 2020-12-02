@@ -734,5 +734,17 @@ form {
         margin: auto;
     }
 
+    .facebook button, .facebook a{
+        padding: 0.7em 0.4em;
+    }
+    .twitter button, .twitter a{
+        padding: 0.7em 0.4em;
+    }
+    .googleplus button, .googleplus a{
+        padding: 0.7em 0.5em;
+    }
+    .linkedin button, .linkedin a{
+        padding: 0.7em 0.5em;
+    }
 
 }
