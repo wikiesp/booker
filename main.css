@@ -192,7 +192,6 @@ ul li {
     box-shadow: 0 15px 38px 0 rgba(0, 0, 0, 0.2);
 }
 
-
 .article_first button {
     background-color: #17c0eb;
     margin: 2em 0;
@@ -641,7 +640,6 @@ form {
         display: block;
     }
 
-
     .view_second {
         margin: 1.3em 0;
     }
@@ -723,7 +721,6 @@ form {
     .li_right li a {
         color: #fff;
     }
-
     .li_right .link1 a {
         color: #16bde9;
     }
@@ -737,46 +734,36 @@ form {
         margin: auto;
     }
 
-    .facebook button,
-    .facebook a {
-        padding: 0.7em 0.4em;
-    }
-
-    .twitter button,
-    .twitter a {
-        padding: 0.7em 0.4em;
-    }
-
-    .googleplus button,
-    .googleplus a {
-        padding: 0.7em 0.5em;
-    }
-
-    .linkedin button,
-    .linkedin a {
-        padding: 0.7em 0.5em;
-    }
 
 }
 
-@media only screen and (min-width: 1200px) {
-    .article_first {
-        padding: 0;
-    }
+/*
+ * ─── ANIMACIONES ────────────────────────────────────────────────────────────────
+ */
 
-    
-    
+.fondo2 {
+    opacity: 0;
+    /* transform: translateX(100vh); */
+}
+.ani-right{
+    opacity: 0;
+}
+.centerr{
+    opacity: 0;
 }
 
-@media only screen and (min-width: 1281px) {
-    .article_first {
-        padding: 7em 4em;
+@keyframes mover {
+    0% {
+        transform: translateX(-100%);
     }
-    .wedo_second {
-        margin-left: 17em;
+}
+@keyframes mover_right {
+    0% {
+        transform: translateX(100%);
     }
-
-    .agents{
-        justify-content: space-between;
+}
+@keyframes center {
+    0% {
+        transform: translateY(100%);
     }
 }
