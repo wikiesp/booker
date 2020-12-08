@@ -70,7 +70,6 @@
 		<!--
 		  -- ─── ABOUT ───────────────────────────────────────────────────────
 		  -->
-
 		<p class="center_p">about</p>
 		<h2 class="center_h2">Get eveything you need to pick the right Agent.</h2>
 		<section class="about">
@@ -94,7 +93,7 @@
 		<h2 class="center_h2">Our Featured Services</h2>
 		<section class="wedo">
 			<article class="wedo_first">
-				<img class="fondo2" src="images/img1.jpg" alt="" />
+				<img id="mainImage" class="left-to-right-main right-to-left-main" src="images/img1.jpg" alt="Img1" />
 			</article>
 			<article class="wedo_second">
 				<span class="icono"><i class="far fa-hospital"></i></span>
@@ -109,7 +108,7 @@
 		<h2 class="center_h2">Recent Properties</h2>
 		<section id="view" class="view">
 			<article class="view_first">
-				<img src="images/n10.jpg" class="fondo2" alt="Casa 1" />
+				<img src="images/n10.jpg" id="leftImage" class="left-to-right right-to-left" alt="Casa 1" />
 				<h4 class="p08">Tittle goes here</h4>
 				<p class="p08"><i class="fas fa-map-marker-alt"></i>123 Location. Example City</p>
 				<div class="view_first_cuadro">
@@ -129,7 +128,7 @@
 				</div>
 			</article>
 			<article class="view_second">
-				<img src="images/n11.jpg" class="centerr" alt="Casa 2" />
+				<img src="images/n11.jpg" id="centerImage" class="down-to-up up-to-down" alt="Casa 2" />
 				<h4 class="p08">Tittle goes here</h4>
 				<p class="p08"><i class="fas fa-map-marker-alt"></i>123 Location. Example City</p>
 				<div class="view_first_cuadro">
@@ -149,7 +148,7 @@
 				</div>
 			</article>
 			<article class="view_three">
-				<img src="images/n12.jpg" class="ani-right" alt="Casa 3" />
+				<img src="images/n12.jpg" id="rightImage" class="rigth-to-down left-to-right" alt="Casa 3" />
 				<h4 class="p08">Tittle goes here</h4>
 				<p class="p08"><i class="fas fa-map-marker-alt"></i>123 Location. Example City</p>
 				<div class="view_first_cuadro">
@@ -255,7 +254,7 @@
 					<p class="our_first_two">Integer sit amet mattis quam, sit amet ultricies velit. Praesent ullamcorper dui turpis.</p>
 				</article>
 				<article class="our_second">
-					<img src="images/img3.jpg" alt="Imagen 3" />
+					<img src="images/img3.jpg" id="rightImage2" class="rigth-to-down left-to-right" alt="Imagen 3" />
 				</article>
 			</section>
 			<section class="foot">
@@ -303,58 +302,9 @@
 			<footer>
 				<h5>
 					© 2018 Booker. All rights reserved | Design by <span class="breakfooter"><a href="https://github.com/wikiesp">Luis Herdeth</a></span>
-					<!-- <button class="#btop" onclick="topFunction()"><i class="far fa-arrow-square-up"></i></button> -->
 				</h5>
 			</footer>
 		</div>
 		<script src="app.js"></script>
-		<script>
-			//direction constants
-			let rightToLeft = 1;
-			let leftToRight = 2;
-			let center = 3;
-
-			// DOM
-			function moveElement(name, direction) {
-				// takes every element that contains the class `name`
-				let animacion = document.querySelectorAll(name);
-
-				const showScroll = () => {
-					let scrollTop = document.documentElement.scrollTop;
-
-					for (let i = 0; i < animacion.length; i++) {
-						const imgAltura = animacion[i].offsetTop;
-						if (imgAltura - 600 < scrollTop) {
-							let movementName = direction;
-							switch (direction) {
-								case leftToRight:
-									movementName = 'mover';
-									break;
-								case rightToLeft:
-									movementName = 'mover_right';
-									break;
-
-								default:
-									movementName = 'center';
-							}
-							// let movementName = direction == leftToRight ? 'mover' : 'mover_right'
-							animacion[i].style.animation = movementName + ' 1s ease';
-							animacion[i].style.opacity = 1;
-						}
-					}
-				};
-
-				return showScroll;
-			}
-
-			let elements = [
-				['.fondo2', leftToRight],
-				['.ani-right', rightToLeft],
-				['.centerr', center],
-			];
-
-			// calls moveElement per image that should be moved
-			elements.forEach((element) => window.addEventListener('scroll', moveElement(element[0], element[1])));
-		</script>
 	</body>
 </html>
